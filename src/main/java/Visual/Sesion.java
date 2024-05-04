@@ -43,7 +43,8 @@ public class Sesion extends javax.swing.JFrame {
         passtxt = new javax.swing.JPasswordField();
         panelAcess = new javax.swing.JPanel();
         labelAcess = new javax.swing.JLabel();
-        registerAccess = new javax.swing.JLabel();
+        privacyAccess = new javax.swing.JLabel();
+        registerAccess1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -152,16 +153,27 @@ public class Sesion extends javax.swing.JFrame {
 
         bg.add(panelAcess, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 500, 150, 40));
 
-        registerAccess.setFont(new java.awt.Font("Noto Sans SemiCondensed", 0, 14)); // NOI18N
-        registerAccess.setForeground(new java.awt.Color(217, 110, 57));
-        registerAccess.setText("¿No tienes cuenta? Registrate");
-        registerAccess.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        registerAccess.addMouseListener(new java.awt.event.MouseAdapter() {
+        privacyAccess.setFont(new java.awt.Font("Noto Sans SemiCondensed", 0, 14)); // NOI18N
+        privacyAccess.setForeground(new java.awt.Color(255, 178, 140));
+        privacyAccess.setText("Política de privacidad");
+        privacyAccess.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        privacyAccess.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                registerAccessMouseClicked(evt);
+                privacyAccessMouseClicked(evt);
             }
         });
-        bg.add(registerAccess, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 560, -1, -1));
+        bg.add(privacyAccess, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 590, -1, -1));
+
+        registerAccess1.setFont(new java.awt.Font("Noto Sans SemiCondensed", 0, 14)); // NOI18N
+        registerAccess1.setForeground(new java.awt.Color(217, 110, 57));
+        registerAccess1.setText("¿No tienes cuenta? Registrate");
+        registerAccess1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        registerAccess1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                registerAccess1MouseClicked(evt);
+            }
+        });
+        bg.add(registerAccess1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 560, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -221,11 +233,17 @@ public class Sesion extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_labelAcessMousePressed
 
-    private void registerAccessMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_registerAccessMouseClicked
+    private void privacyAccessMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_privacyAccessMouseClicked
+        PoliticaPrivacidad abrir = new PoliticaPrivacidad();
+        abrir.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_privacyAccessMouseClicked
+
+    private void registerAccess1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_registerAccess1MouseClicked
         Registro abrir = new Registro();
         abrir.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_registerAccessMouseClicked
+    }//GEN-LAST:event_registerAccess1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -276,7 +294,8 @@ public class Sesion extends javax.swing.JFrame {
     private javax.swing.JLabel logoname2;
     private javax.swing.JPanel panelAcess;
     private javax.swing.JPasswordField passtxt;
-    private javax.swing.JLabel registerAccess;
+    private javax.swing.JLabel privacyAccess;
+    private javax.swing.JLabel registerAccess1;
     private javax.swing.JTextField usertxt;
     private javax.swing.JLabel usuariotext;
     // End of variables declaration//GEN-END:variables
