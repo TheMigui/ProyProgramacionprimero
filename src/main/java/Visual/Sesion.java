@@ -6,19 +6,24 @@ package Visual;
 
 import java.awt.Color;
 
+
 /**
  *
  * @author javie
  */
 public class Sesion extends javax.swing.JFrame {
 
+    
+
     /**
      * Creates new form Sesion
      */
-    public Sesion() {
+     public Sesion() {
         initComponents();
+        errorLabel.setVisible(false);
     }
 
+   
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -45,6 +50,7 @@ public class Sesion extends javax.swing.JFrame {
         labelAcess = new javax.swing.JLabel();
         privacyAccess = new javax.swing.JLabel();
         registerAccess1 = new javax.swing.JLabel();
+        errorLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -175,6 +181,11 @@ public class Sesion extends javax.swing.JFrame {
         });
         bg.add(registerAccess1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 560, -1, -1));
 
+        errorLabel.setFont(new java.awt.Font("Noto Sans ExtraBold", 0, 12)); // NOI18N
+        errorLabel.setForeground(new java.awt.Color(255, 0, 0));
+        errorLabel.setText("(*) El usuario o contraseña es incorrecto");
+        bg.add(errorLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 500, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -226,7 +237,10 @@ public class Sesion extends javax.swing.JFrame {
     }//GEN-LAST:event_passtxtMousePressed
 
     private void labelAcessMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAcessMouseClicked
-        javax.swing.JOptionPane.showMessageDialog(this,"Intento de login con los datos:\nUsuario: " + usertxt.getText() + "\nContraseña: " + String.valueOf(passtxt.getPassword()), "LOGIN", javax.swing.JOptionPane.INFORMATION_MESSAGE);
+        PrincipalCliente abrir = new PrincipalCliente();
+        abrir.setVisible(true);
+        this.setVisible(false);
+        
     }//GEN-LAST:event_labelAcessMouseClicked
 
     private void labelAcessMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAcessMousePressed
@@ -284,6 +298,7 @@ public class Sesion extends javax.swing.JFrame {
     private javax.swing.JPanel bg;
     private javax.swing.JLabel citybg;
     private javax.swing.JLabel contraseñatext;
+    private javax.swing.JLabel errorLabel;
     private javax.swing.JLabel favicon;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;

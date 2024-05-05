@@ -80,6 +80,7 @@ public class PoliticaPrivacidad extends javax.swing.JFrame {
 
         jScrollPane1.setBackground(new java.awt.Color(204, 204, 204));
 
+        jTextArea1.setBackground(new java.awt.Color(255, 234, 209));
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Noto Sans", 0, 14)); // NOI18N
         jTextArea1.setRows(5);

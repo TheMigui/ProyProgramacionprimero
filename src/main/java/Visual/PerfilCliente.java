@@ -15,6 +15,16 @@ public class PerfilCliente extends javax.swing.JFrame {
      */
     public PerfilCliente() {
         initComponents();
+        diaTxt.setVisible(false);
+        mesTxt.setVisible(false);
+        anoTxt.setVisible(false);
+        cvvTxt.setVisible(false);
+        dniTxt.setVisible(false);
+        correoTxt.setVisible(false);
+        telefTxt.setVisible(false);
+        nombreTxt.setVisible(false);
+        creditTxt.setVisible(false);
+        passTxt.setVisible(false);
     }
 
     /**
@@ -26,21 +36,311 @@ public class PerfilCliente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        micuentaLabel = new javax.swing.JLabel();
+        paginaprincipalBtn = new javax.swing.JButton();
+        informacionLabel = new javax.swing.JLabel();
+        dniLabel = new javax.swing.JLabel();
+        nombreLabel = new javax.swing.JLabel();
+        correoLabel = new javax.swing.JLabel();
+        passLabel = new javax.swing.JLabel();
+        telefLabel = new javax.swing.JLabel();
+        creditoLabel = new javax.swing.JLabel();
+        fondoInfo = new javax.swing.JPanel();
+        correoTxt = new javax.swing.JTextField();
+        dniTxt = new javax.swing.JTextField();
+        nombreTxt = new javax.swing.JTextField();
+        passTxt = new javax.swing.JTextField();
+        telefTxt = new javax.swing.JTextField();
+        creditTxt = new javax.swing.JTextField();
+        mesTxt = new javax.swing.JTextField();
+        diaTxt = new javax.swing.JTextField();
+        anoTxt = new javax.swing.JTextField();
+        cvvTxt = new javax.swing.JTextField();
+        diaLabel = new javax.swing.JLabel();
+        mesLabel = new javax.swing.JLabel();
+        anoLabel = new javax.swing.JLabel();
+        cvvLabel = new javax.swing.JLabel();
+        preguntaLabel = new javax.swing.JLabel();
+        modifComboBox = new javax.swing.JComboBox<>();
+        ustedesLabel = new javax.swing.JLabel();
+        fondoUsted = new javax.swing.JPanel();
+        logoIcon = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(255, 236, 217));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel2.setBackground(new java.awt.Color(255, 158, 0));
+
+        micuentaLabel.setFont(new java.awt.Font("Noto Sans ExtraBold", 0, 18)); // NOI18N
+        micuentaLabel.setText("Mi Cuenta");
+
+        paginaprincipalBtn.setBackground(new java.awt.Color(255, 204, 51));
+        paginaprincipalBtn.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 14)); // NOI18N
+        paginaprincipalBtn.setText("Página Principal");
+        paginaprincipalBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        paginaprincipalBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paginaprincipalBtnActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(micuentaLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 692, Short.MAX_VALUE)
+                .addComponent(paginaprincipalBtn)
+                .addGap(19, 19, 19))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(micuentaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(paginaprincipalBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 980, 50));
+
+        informacionLabel.setFont(new java.awt.Font("Noto Sans ExtraBold", 0, 24)); // NOI18N
+        informacionLabel.setText("Información de la cuenta:");
+        jPanel1.add(informacionLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, -1));
+
+        dniLabel.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 24)); // NOI18N
+        dniLabel.setText("DNI:");
+        jPanel1.add(dniLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 150, -1, -1));
+
+        nombreLabel.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 24)); // NOI18N
+        nombreLabel.setText("Nombre completo:");
+        jPanel1.add(nombreLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 210, -1, -1));
+
+        correoLabel.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 24)); // NOI18N
+        correoLabel.setText("Correo electrónico:");
+        jPanel1.add(correoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 270, -1, -1));
+
+        passLabel.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 24)); // NOI18N
+        passLabel.setText("Contraseña:");
+        jPanel1.add(passLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 340, -1, -1));
+
+        telefLabel.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 24)); // NOI18N
+        telefLabel.setText("Teléfono:");
+        jPanel1.add(telefLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 410, -1, -1));
+
+        creditoLabel.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 24)); // NOI18N
+        creditoLabel.setText("Tarjeta de crédito:");
+        jPanel1.add(creditoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 480, -1, -1));
+
+        fondoInfo.setBackground(new java.awt.Color(255, 204, 153));
+        fondoInfo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        correoTxt.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
+        correoTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                correoTxtActionPerformed(evt);
+            }
+        });
+        fondoInfo.add(correoTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 140, 330, -1));
+
+        dniTxt.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
+        dniTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dniTxtActionPerformed(evt);
+            }
+        });
+        fondoInfo.add(dniTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 500, -1));
+
+        nombreTxt.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
+        nombreTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nombreTxtActionPerformed(evt);
+            }
+        });
+        fondoInfo.add(nombreTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 420, -1));
+
+        passTxt.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
+        fondoInfo.add(passTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 80, 340, -1));
+
+        telefTxt.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
+        telefTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                telefTxtActionPerformed(evt);
+            }
+        });
+        fondoInfo.add(telefTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, 450, -1));
+
+        creditTxt.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
+        creditTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                creditTxtActionPerformed(evt);
+            }
+        });
+        fondoInfo.add(creditTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 350, -1));
+
+        mesTxt.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
+        fondoInfo.add(mesTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, -1, -1));
+
+        diaTxt.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
+        diaTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                diaTxtActionPerformed(evt);
+            }
+        });
+        fondoInfo.add(diaTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 70, -1));
+
+        anoTxt.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
+        fondoInfo.add(anoTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 390, -1, -1));
+
+        cvvTxt.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
+        cvvTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cvvTxtActionPerformed(evt);
+            }
+        });
+        fondoInfo.add(cvvTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 390, -1, -1));
+
+        diaLabel.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
+        diaLabel.setText("Día:");
+        fondoInfo.add(diaLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, -1, -1));
+
+        mesLabel.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
+        mesLabel.setText("Mes:");
+        fondoInfo.add(mesLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 390, -1, -1));
+
+        anoLabel.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
+        anoLabel.setText("Año:");
+        fondoInfo.add(anoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 390, -1, -1));
+
+        cvvLabel.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
+        cvvLabel.setText("CVV");
+        fondoInfo.add(cvvLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 390, -1, -1));
+
+        jPanel1.add(fondoInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 140, 610, 430));
+
+        preguntaLabel.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 14)); // NOI18N
+        preguntaLabel.setText("¿Desea modificar información de sus datos?");
+        jPanel1.add(preguntaLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
+
+        modifComboBox.setBackground(new java.awt.Color(255, 153, 51));
+        modifComboBox.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 12)); // NOI18N
+        modifComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "¿Modificación de datos?", "SÍ", "NO" }));
+        modifComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modifComboBoxActionPerformed(evt);
+            }
+        });
+        jPanel1.add(modifComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
+
+        ustedesLabel.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 18)); // NOI18N
+        ustedesLabel.setText("Usted es un: CLIENTE PARTICULAR");
+        jPanel1.add(ustedesLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 80, -1, -1));
+
+        fondoUsted.setBackground(new java.awt.Color(255, 153, 51));
+
+        javax.swing.GroupLayout fondoUstedLayout = new javax.swing.GroupLayout(fondoUsted);
+        fondoUsted.setLayout(fondoUstedLayout);
+        fondoUstedLayout.setHorizontalGroup(
+            fondoUstedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 190, Short.MAX_VALUE)
+        );
+        fondoUstedLayout.setVerticalGroup(
+            fondoUstedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 50, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(fondoUsted, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 70, 190, 50));
+
+        logoIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        logoIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo.png"))); // NOI18N
+        jPanel1.add(logoIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 350, 360));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void paginaprincipalBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paginaprincipalBtnActionPerformed
+        PrincipalCliente abrir = new PrincipalCliente();
+        abrir.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_paginaprincipalBtnActionPerformed
+
+    private void modifComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modifComboBoxActionPerformed
+        String selectedOption = (String) modifComboBox.getSelectedItem();
+        if (selectedOption.equals("No")) {
+            diaTxt.setVisible(false);
+            mesTxt.setVisible(false);
+            anoTxt.setVisible(false);
+            cvvTxt.setVisible(false);
+            dniTxt.setVisible(false);
+            correoTxt.setVisible(false);
+            telefTxt.setVisible(false);
+            nombreTxt.setVisible(false);
+            creditTxt.setVisible(false);
+            passTxt.setVisible(false);
+            
+
+        } 
+        else {
+            diaTxt.setVisible(true);
+            mesTxt.setVisible(true);
+            anoTxt.setVisible(true);
+            cvvTxt.setVisible(true);
+            dniTxt.setVisible(true);
+            correoTxt.setVisible(true);
+            telefTxt.setVisible(true);
+            nombreTxt.setVisible(true);
+            creditTxt.setVisible(true);
+            passTxt.setVisible(true);
+
+        }
+    }//GEN-LAST:event_modifComboBoxActionPerformed
+
+    private void correoTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correoTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_correoTxtActionPerformed
+
+    private void dniTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dniTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dniTxtActionPerformed
+
+    private void nombreTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nombreTxtActionPerformed
+
+    private void telefTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telefTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_telefTxtActionPerformed
+
+    private void diaTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_diaTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_diaTxtActionPerformed
+
+    private void creditTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_creditTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_creditTxtActionPerformed
+
+    private void cvvTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cvvTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cvvTxtActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +378,36 @@ public class PerfilCliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel anoLabel;
+    private javax.swing.JTextField anoTxt;
+    private javax.swing.JLabel correoLabel;
+    private javax.swing.JTextField correoTxt;
+    private javax.swing.JTextField creditTxt;
+    private javax.swing.JLabel creditoLabel;
+    private javax.swing.JLabel cvvLabel;
+    private javax.swing.JTextField cvvTxt;
+    private javax.swing.JLabel diaLabel;
+    private javax.swing.JTextField diaTxt;
+    private javax.swing.JLabel dniLabel;
+    private javax.swing.JTextField dniTxt;
+    private javax.swing.JPanel fondoInfo;
+    private javax.swing.JPanel fondoUsted;
+    private javax.swing.JLabel informacionLabel;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel logoIcon;
+    private javax.swing.JLabel mesLabel;
+    private javax.swing.JTextField mesTxt;
+    private javax.swing.JLabel micuentaLabel;
+    private javax.swing.JComboBox<String> modifComboBox;
+    private javax.swing.JLabel nombreLabel;
+    private javax.swing.JTextField nombreTxt;
+    private javax.swing.JButton paginaprincipalBtn;
+    private javax.swing.JLabel passLabel;
+    private javax.swing.JTextField passTxt;
+    private javax.swing.JLabel preguntaLabel;
+    private javax.swing.JLabel telefLabel;
+    private javax.swing.JTextField telefTxt;
+    private javax.swing.JLabel ustedesLabel;
     // End of variables declaration//GEN-END:variables
 }
