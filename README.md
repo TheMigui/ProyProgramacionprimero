@@ -1,4 +1,4 @@
-<img src="JavaBnB/Logo01.png" alt="LogoJavaBnB" width="200" height="200">
+<img src="src/main/resources/logo.png" alt="LogoJavaBnB" width="200" height="200">
 
 # JavaBnB: Plataforma de Alquiler de Inmuebles Vacacionales
 
