@@ -51,6 +51,8 @@ public class Sesion extends javax.swing.JFrame {
         privacyAccess = new javax.swing.JLabel();
         registerAccess1 = new javax.swing.JLabel();
         errorLabel = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -71,12 +73,12 @@ public class Sesion extends javax.swing.JFrame {
         bg.add(citybg, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 0, 360, 650));
 
         favicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/favicon.png"))); // NOI18N
-        bg.add(favicon, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 100, 70));
+        bg.add(favicon, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 100, 70));
 
-        logoname2.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 28)); // NOI18N
+        logoname2.setFont(new java.awt.Font("Noto Sans ExtraBold", 0, 36)); // NOI18N
         logoname2.setForeground(new java.awt.Color(255, 153, 102));
         logoname2.setText("JavaBnB");
-        bg.add(logoname2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 190, 50));
+        bg.add(logoname2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 110, 190, 50));
 
         logintext.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 36)); // NOI18N
         logintext.setText("INICIAR SESIÓN");
@@ -185,6 +187,16 @@ public class Sesion extends javax.swing.JFrame {
         errorLabel.setForeground(new java.awt.Color(255, 0, 0));
         errorLabel.setText("(*) El usuario o contraseña es incorrecto");
         bg.add(errorLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 500, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 102, 102));
+        jLabel1.setText("¿Está en búsqueda del alojamiento de sus sueños?");
+        bg.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 153, 51));
+        jLabel2.setText("Le presentamos");
+        bg.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -300,6 +312,8 @@ public class Sesion extends javax.swing.JFrame {
     private javax.swing.JLabel contraseñatext;
     private javax.swing.JLabel errorLabel;
     private javax.swing.JLabel favicon;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel labelAcess;

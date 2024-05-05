@@ -25,6 +25,7 @@ public class PerfilCliente extends javax.swing.JFrame {
         nombreTxt.setVisible(false);
         creditTxt.setVisible(false);
         passTxt.setVisible(false);
+        guardarBtn.setVisible(false);
     }
 
     /**
@@ -67,8 +68,11 @@ public class PerfilCliente extends javax.swing.JFrame {
         ustedesLabel = new javax.swing.JLabel();
         fondoUsted = new javax.swing.JPanel();
         logoIcon = new javax.swing.JLabel();
+        guardarBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocationByPlatform(true);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 236, 217));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -187,7 +191,7 @@ public class PerfilCliente extends javax.swing.JFrame {
         fondoInfo.add(creditTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 350, -1));
 
         mesTxt.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
-        fondoInfo.add(mesTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, -1, -1));
+        fondoInfo.add(mesTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 70, -1));
 
         diaTxt.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
         diaTxt.addActionListener(new java.awt.event.ActionListener() {
@@ -198,7 +202,7 @@ public class PerfilCliente extends javax.swing.JFrame {
         fondoInfo.add(diaTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 70, -1));
 
         anoTxt.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
-        fondoInfo.add(anoTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 390, -1, -1));
+        fondoInfo.add(anoTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 390, 70, -1));
 
         cvvTxt.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
         cvvTxt.addActionListener(new java.awt.event.ActionListener() {
@@ -206,7 +210,7 @@ public class PerfilCliente extends javax.swing.JFrame {
                 cvvTxtActionPerformed(evt);
             }
         });
-        fondoInfo.add(cvvTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 390, -1, -1));
+        fondoInfo.add(cvvTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 390, 70, -1));
 
         diaLabel.setFont(new java.awt.Font("Noto Sans", 0, 12)); // NOI18N
         diaLabel.setText("Día:");
@@ -242,7 +246,7 @@ public class PerfilCliente extends javax.swing.JFrame {
 
         ustedesLabel.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 18)); // NOI18N
         ustedesLabel.setText("Usted es un: CLIENTE PARTICULAR");
-        jPanel1.add(ustedesLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 80, -1, -1));
+        jPanel1.add(ustedesLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 90, -1, -1));
 
         fondoUsted.setBackground(new java.awt.Color(255, 153, 51));
 
@@ -254,14 +258,20 @@ public class PerfilCliente extends javax.swing.JFrame {
         );
         fondoUstedLayout.setVerticalGroup(
             fondoUstedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 50, Short.MAX_VALUE)
+            .addGap(0, 30, Short.MAX_VALUE)
         );
 
-        jPanel1.add(fondoUsted, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 70, 190, 50));
+        jPanel1.add(fondoUsted, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 90, 190, 30));
 
         logoIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         logoIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo.png"))); // NOI18N
         jPanel1.add(logoIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 350, 360));
+
+        guardarBtn.setBackground(new java.awt.Color(0, 204, 0));
+        guardarBtn.setFont(new java.awt.Font("Noto Sans SemiBold", 0, 18)); // NOI18N
+        guardarBtn.setText("Guardar");
+        guardarBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(guardarBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 100, 270, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -285,7 +295,7 @@ public class PerfilCliente extends javax.swing.JFrame {
 
     private void modifComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modifComboBoxActionPerformed
         String selectedOption = (String) modifComboBox.getSelectedItem();
-        if (selectedOption.equals("No")) {
+        if (selectedOption.equals("NO")) {
             diaTxt.setVisible(false);
             mesTxt.setVisible(false);
             anoTxt.setVisible(false);
@@ -296,6 +306,22 @@ public class PerfilCliente extends javax.swing.JFrame {
             nombreTxt.setVisible(false);
             creditTxt.setVisible(false);
             passTxt.setVisible(false);
+            guardarBtn.setVisible(false);
+            
+
+        } 
+        else if (selectedOption.equals("¿Modificación de datos?")) {
+            diaTxt.setVisible(false);
+            mesTxt.setVisible(false);
+            anoTxt.setVisible(false);
+            cvvTxt.setVisible(false);
+            dniTxt.setVisible(false);
+            correoTxt.setVisible(false);
+            telefTxt.setVisible(false);
+            nombreTxt.setVisible(false);
+            creditTxt.setVisible(false);
+            passTxt.setVisible(false);
+            guardarBtn.setVisible(false);
             
 
         } 
@@ -310,6 +336,7 @@ public class PerfilCliente extends javax.swing.JFrame {
             nombreTxt.setVisible(true);
             creditTxt.setVisible(true);
             passTxt.setVisible(true);
+            guardarBtn.setVisible(true);
 
         }
     }//GEN-LAST:event_modifComboBoxActionPerformed
@@ -392,6 +419,7 @@ public class PerfilCliente extends javax.swing.JFrame {
     private javax.swing.JTextField dniTxt;
     private javax.swing.JPanel fondoInfo;
     private javax.swing.JPanel fondoUsted;
+    private javax.swing.JButton guardarBtn;
     private javax.swing.JLabel informacionLabel;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
