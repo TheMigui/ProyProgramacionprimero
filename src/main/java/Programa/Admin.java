@@ -1,14 +1,21 @@
 package Programa;
+import java.util.ArrayList;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
-/**
- *
- * @author javie
- */
 public class Admin {
-    
+  public static void imprimirParticulares() {
+        
+    }
+
+    public static void imprimirHosts() {
+        
+    }
+    public void gestionarInmuebles() {
+
+    }
+
+    public void gestionarReservas() {
+
+
+    }
 }
